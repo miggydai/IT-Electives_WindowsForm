@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CustomersDataSet" targetNamespace="http://tempuri.org/CustomersDataSet.xsd" xmlns:mstns="http://tempuri.org/CustomersDataSet.xsd" xmlns="http://tempuri.org/CustomersDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="appdevConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="appdevConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.appdevConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="customersTableAdapter" GeneratorDataComponentClassName="customersTableAdapter" Name="customers" UserDataComponentName="customersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="appdevConnectionString (Settings)" DbObjectName="appdev.customers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `cid`, `cname`, `cadd`, `telephoneNum` FROM `customers`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CustomersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CustomersDataSet" msprop:Generator_UserDSName="CustomersDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="customers" msprop:Generator_TableClassName="customersDataTable" msprop:Generator_TableVarName="tablecustomers" msprop:Generator_TablePropName="customers" msprop:Generator_RowDeletingName="customersRowDeleting" msprop:Generator_RowChangingName="customersRowChanging" msprop:Generator_RowEvHandlerName="customersRowChangeEventHandler" msprop:Generator_RowDeletedName="customersRowDeleted" msprop:Generator_UserTableName="customers" msprop:Generator_RowChangedName="customersRowChanged" msprop:Generator_RowEvArgName="customersRowChangeEvent" msprop:Generator_RowClassName="customersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
